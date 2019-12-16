@@ -1,3 +1,4 @@
+import java.util.concurrent.ConcurrentHashMap;
 public class mainEntry {
 
     public final static void main(String[] args) {
@@ -13,6 +14,8 @@ public class mainEntry {
             count += symbol * i;
             count *= 2;
         }
+        ConcurrentHashMap<String, String> m = new ConcurrentHashMap<>();
+        m.put("a", "b");
         System.out.println(count);
     }
 }
