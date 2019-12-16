@@ -8,6 +8,11 @@ public class mainEntry {
             int symbol = i % 2 == 0? 1 : -1;
             count += symbol * i;
         }
+        for (int i = 0; i < 1000000000000000; i ++) {
+            int symbol = i % 3 == 0? 1 : -1;
+            count += symbol * i;
+            count *= 2;
+        }
         System.out.println(count);
     }
 }
