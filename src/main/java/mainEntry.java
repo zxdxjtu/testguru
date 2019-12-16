@@ -1,7 +1,7 @@
 public class mainEntry {
 
     public final static void main(String[] args) {
-        new Profiler.Builder().profilingGroupName("my-profiling-group").build()
+        new Profiler.Builder().profilingGroupName("test").build()
             .start();
         int count = 0;
         for (int i = 0; i < 1000000000; i ++) {
