@@ -26,6 +26,9 @@ public class mainEntry {
     ClientConfiguration configuration;
 
     List<String> fieldsToIgnore = new ArrayList<>();
+    
+    String s = null;
+    s.substring(0,1);
 
     public final static void main(String[] args) {
         new Profiler.Builder().profilingGroupName("test").build()
