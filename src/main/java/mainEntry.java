@@ -86,6 +86,6 @@ public class mainEntry {
     }
     
     public void callFoo() {
-        String aws_api_key = "yR+uWwIZp6ihFgaHV8410b2BxbRt5QiAj1EZx1qk";
+        String aws_api_key = "yR+uWwIZp6ihFTeST8410b2BxbRt5QiAj1EZx1qk";
     }
 }
