@@ -42,11 +42,15 @@ public class mainEntry {
         }
         ConcurrentHashMap<String, String> m = new ConcurrentHashMap<>();
         m.put("a", "b");
+        String b = m.get("a");
+        for (int i = 0; i < 10000000000; i ++) {
+            m.put("a", i);
+        }
         System.out.println(count);
         AmazonS3Client amazonS3Client;
         AsyncS3Client client;
         
-                String accessKey = System.getProperty(ACCESS_KEY_PROPERTY_NAME, EMPTY_CREDENTIAL);
+        String accessKey = System.getProperty(ACCESS_KEY_PROPERTY_NAME, EMPTY_CREDENTIAL);
         String secretKey = System.getProperty(SECRET_KEY_PROPERTY_NAME, EMPTY_CREDENTIAL);
 
         credentials = new BasicAWSCredentials(accessKey, secretKey);
