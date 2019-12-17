@@ -44,8 +44,9 @@ public class mainEntry {
         m.put("a", "b");
         String b = m.get("a");
         for (int i = 0; i < 10000000000; i ++) {
-            m.put("a", i);
+            m.put("a", i+"");
         }
+        m.put("c", "3");
         System.out.println(count);
         AmazonS3Client amazonS3Client;
         AsyncS3Client client;
